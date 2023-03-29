@@ -1,0 +1,25 @@
+.lodging-gallery {
+  background: #f7f7f7;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 15px;
+  width: 90%;
+}
+
+@media (max-width: 980px) {
+  .lodging-gallery {
+    margin-left: 60px;
+    width: calc(100% - 130px);
+  }
+}
+
+@media (max-width: 575px) {
+  .lodging-gallery {
+    background: none;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+  }
+}

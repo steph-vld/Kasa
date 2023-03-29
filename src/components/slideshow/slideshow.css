@@ -1,0 +1,89 @@
+.slideshow {
+  height: 415px;
+  position: relative;
+  width: 100%;
+}
+
+.nextArrow {
+  position: absolute;
+  width: 45px;
+  margin-right: 25px;
+  right: 0;
+  top: 50%;
+}
+.nextArrow:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 4px 6px black);
+  transform: scale(1.03);
+  transition: all ease-in-out 0.4s;
+}
+.previousArrow {
+  position: absolute;
+  width: 45px;
+  margin-left: 25px;
+  top: 50%;
+}
+.previousArrow:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 4px 6px black);
+  transform: scale(1.03);
+  transition: all ease-in-out 0.4s;
+}
+
+.slideshow-img {
+  border-radius: 15px;
+  object-fit: cover;
+  display: none;
+  width: 100%;
+}
+.slideshow-img.current {
+  display: block;
+  height: 470px;
+}
+
+.imageCount {
+  position: absolute;
+  bottom: -25px;
+  left: 49%;
+  color: white;
+  font-size: 30px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+@media (max-width: 980px) {
+  .slideshow-img.current {
+    height: 380px;
+  }
+  .nextArrow {
+    width: 30px;
+    margin-right: 15px;
+    margin-top: -40px;
+  }
+  .previousArrow {
+    width: 30px;
+    margin-left: 15px;
+    margin-top: -40px;
+  }
+  .imageCount{
+    visibility: hidden;
+  }
+}
+@media (max-width: 575px) {
+  .slideshow-img.current {
+    height: 250px;
+    width: 100%;
+  }
+  .nextArrow {
+    width: 20px;
+    margin-right: 10px;
+    margin-top: -90px;
+  }
+  .previousArrow {
+    width: 20px;
+    margin-left: 10px;
+    margin-top: -90px;
+  }
+  .imageCount{
+    visibility: hidden;
+  }
+}
