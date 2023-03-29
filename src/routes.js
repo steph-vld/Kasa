@@ -12,7 +12,7 @@ function routes() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         
         <Route path="/Kasa/" element={<Home />} />
         <Route path="/Lodgings/:id" element={<Lodgings />} />
