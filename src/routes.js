@@ -14,7 +14,7 @@ function routes() {
       <Routes>
         <Route path="/" element={<Home />} />
         
-        {/* <Route path="/Kasa" element={<Home />} /> */}
+        <Route path="/Kasa/" element={<Home />} />
         <Route path="/Lodgings/:id" element={<Lodgings />} />
         <Route path="/apropos" element={<About />} />
 
